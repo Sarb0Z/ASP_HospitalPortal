@@ -19,11 +19,11 @@
                 <asp:Label ID="Label1" runat="server" Text="DOCTOR"></asp:Label>
             </asp:TableCell>
             <asp:TableCell>
-                <asp:LinkButton ID="LinkButton1" runat="server" Text="Add" CommandName="Edit" CommandArgument='<%# Eval("ID") %>'></asp:LinkButton>
+                <asp:LinkButton ID="LinkButton1" runat="server" Text="Add" CommandName="Edit" href="/App/Components/Doctor/AddDoctor.aspx"></asp:LinkButton>
                 <br/> 
-                <asp:LinkButton ID="LinkButton2" runat="server" Text="Update" CommandName="Delete" CommandArgument='<%# Eval("ID") %>'></asp:LinkButton>
+                <asp:LinkButton ID="LinkButton2" runat="server" Text="Update" CommandName="Delete" href="/App/Components/Doctor/EditDoctor.aspx"></asp:LinkButton>
                 <br/> 
-                <asp:LinkButton ID="LinkButton3" runat="server" Text="Delete" CommandName="Delete" CommandArgument='<%# Eval("ID") %>'></asp:LinkButton>
+                <asp:LinkButton ID="LinkButton3" runat="server" Text="Delete" CommandName="Delete" href="/App/Components/Doctor/DeleteDoctor.aspx"></asp:LinkButton>
                 
             </asp:TableCell>
         </asp:TableRow>
@@ -32,11 +32,11 @@
                 <asp:Label ID="Label2" runat="server" Text="PATIENTS"></asp:Label>
             </asp:TableCell>
             <asp:TableCell>
-                <asp:LinkButton ID="LinkButton4" runat="server" Text="Add" CommandName="Edit" CommandArgument='<%# Eval("ID") %>'></asp:LinkButton>
+                <asp:LinkButton ID="LinkButton4" runat="server" Text="Add" CommandName="Edit" href="/App/Components/Patient/AddPatient.aspx"></asp:LinkButton>
                 <br/> 
-                <asp:LinkButton ID="LinkButton5" runat="server" Text="Update" CommandName="Delete" CommandArgument='<%# Eval("ID") %>'></asp:LinkButton>
+                <asp:LinkButton ID="LinkButton5" runat="server" Text="Update" CommandName="Delete" href="/App/Components/Patient/EditPatient.aspx"></asp:LinkButton>
                 <br/> 
-                <asp:LinkButton ID="LinkButton6" runat="server" Text="Delete" CommandName="Delete" CommandArgument='<%# Eval("ID") %>'></asp:LinkButton>
+                <asp:LinkButton ID="LinkButton6" runat="server" Text="Delete" CommandName="Delete" href="/App/Components/Patient/DeletePatient.aspx"></asp:LinkButton>
                 
             </asp:TableCell>
         </asp:TableRow>
@@ -45,14 +45,14 @@
                 <asp:Label ID="Label3" runat="server" Text="VISITS"></asp:Label>
             </asp:TableCell>
             <asp:TableCell>
-                <asp:LinkButton ID="LinkButton7" runat="server" Text="Add" CommandName="Edit" CommandArgument='<%# Eval("ID") %>'>                    
+                <asp:LinkButton ID="LinkButton7" runat="server" Text="Add" CommandName="Edit" href="/App/Components/Visit/AddVisit.aspx">                    
                   
                 </asp:LinkButton>
                         
                 <br/> 
-                <asp:LinkButton ID="LinkButton8" runat="server" Text="Update" CommandName="Delete" CommandArgument='<%# Eval("ID") %>'></asp:LinkButton>
+                <asp:LinkButton ID="LinkButton8" runat="server" Text="Update" CommandName="Delete" href="/App/Components/Visit/EditVisit.aspx"></asp:LinkButton>
                 <br/> 
-                <asp:LinkButton ID="LinkButton9" runat="server" Text="Delete" CommandName="Delete" CommandArgument='<%# Eval("ID") %>'></asp:LinkButton>
+                <asp:LinkButton ID="LinkButton9" runat="server" Text="Delete" CommandName="Delete" href="/App/Components/Visit/DeleteVisit.aspx"></asp:LinkButton>
      
             </asp:TableCell>
         </asp:TableRow>
@@ -61,7 +61,7 @@
                 <asp:Label ID="Label4" runat="server" Text="PERSCRIPTIONS"></asp:Label>
             </asp:TableCell>
             <asp:TableCell>
-                <asp:LinkButton ID="LinkButton10" runat="server" Text="Add" CommandName="Edit" CommandArgument='<%# Eval("ID") %>'>                    
+                <asp:LinkButton ID="LinkButton10" runat="server" Text="Add" CommandName="Edit" href="/App/Components/AddPrescription.aspx">                    
                   
                 </asp:LinkButton>
                         

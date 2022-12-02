@@ -16,6 +16,5 @@
                 <br /><br />
                 <asp:Button ID="addDoc" text="ADD PRESCRIPTION" runat="server"  OnClick="btnAddPrescription_Click" />
                 <br /><br />  
-                Click To  <a href="GenericWriteOperations.aspx" > ADD </a>
             </p>
 </asp:Content>

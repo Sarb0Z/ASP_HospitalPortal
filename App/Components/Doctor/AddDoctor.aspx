@@ -8,6 +8,5 @@
                 <br />
                 <asp:Button ID="addDoc" text="ADD DOCTOR" runat="server" OnClick="addDoc_Click"  />
                 <br /><br />  
-                Click To  <a href="GenericWriteOperations.aspx" > ADD </a>
             </p>
 </asp:Content>

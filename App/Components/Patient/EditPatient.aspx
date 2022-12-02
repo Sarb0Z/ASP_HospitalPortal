@@ -11,5 +11,4 @@
                 <br /><br />
                 <asp:Button ID="addDoc" text="EDIT PATIENT" runat="server" OnClick="btnUpdatePatient_Click" />
                 <br /><br />  
-                Click To  <a href="GenericWriteOperations.aspx" > EDIT </a>
 </asp:Content>

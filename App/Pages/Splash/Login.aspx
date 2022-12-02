@@ -1,8 +1,17 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PortalHOC.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ASP_HospitalPortal.App.Pages.Splash.Loginaspx" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">    
-        <div id="loginBox" >
+﻿<%@ Page Title="" Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ASP_HospitalPortal.App.Pages.Splash.Loginaspx" %>
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="loginBox" >
             <img src="images/l.png" style="margin-top:50px; width:60%;" />
             <p>
                 Login ID : <asp:TextBox CssClass="textboxes" ID="mailbox" Placeholder="Mail" runat="server"></asp:TextBox><br /><br />
@@ -13,4 +22,8 @@
                 Click To  <a href="SignUp.aspx" >Sign Up</a>
             </p>
         </div>
-</asp:Content>
+        </div>
+    </form>
+</body>
+</html>
+

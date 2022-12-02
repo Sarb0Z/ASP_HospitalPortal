@@ -7,6 +7,5 @@
                 
                 <asp:Button ID="delDoc" text="DELETE VISIT" runat="server" OnClick="DeleteVisitButton_Click"  />
                 <br /><br />  
-                Click To  <a href="GenericWriteOperations.aspx" > DELETE </a>
      </p>
 </asp:Content>

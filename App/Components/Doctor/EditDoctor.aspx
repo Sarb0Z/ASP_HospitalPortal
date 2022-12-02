@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-\
+
             <asp:Panel ID="Panel1" runat="server">
                 <asp:Label ID="Label1" runat="server" Text="Edit Doctor"></asp:Label>
                 <br />
@@ -22,7 +22,6 @@
                   <asp:Button ID="addDoc" text="EDIT DOCTOR" runat="server" OnClick="btnUpdate_Click" />
                  <br />
                 <br />
-                 Click To  <a href="GenericWriteOperations.aspx" > EDIT </a>
                 </asp:Panel>
 
                                 

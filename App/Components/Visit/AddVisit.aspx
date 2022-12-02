@@ -12,6 +12,6 @@
          <br /><br />
                 <asp:Button ID="addDoc" text="ADD VIST" runat="server" OnClick="btnAddVisit_Click"  />
                 <br /><br />  
-                Click To  <a href="GenericWriteOperations.aspx" > ADD </a>
+                
             </p>
 </asp:Content>
