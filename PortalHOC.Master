@@ -7,7 +7,7 @@
     <title></title>
     <link href="Styling/CSS/bootstrap.min.css" rel="stylesheet"/>
     <link href="Styling/CSS/jquery.dataTables.min.css" rel="stylesheet"/>
-    
+    <script src="Styling/JS/jquery.dataTables.min.js"></script>
     <script src="Styling/JS/popper.min.js"></script>
     <script src="Styling/JS/bootstrap.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
