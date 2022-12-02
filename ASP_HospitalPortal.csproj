@@ -74,6 +74,7 @@
     <Content Include="App\Components\Patient\AddPatient.aspx" />
     <Content Include="App\Components\Patient\DeletePatient.aspx" />
     <Content Include="App\Components\Patient\EditPatient.aspx" />
+    <Content Include="App\Components\AddPrescription.aspx" />
     <Content Include="App\Components\Visit\AddVisit.aspx" />
     <Content Include="App\Components\Visit\DeleteVisit.aspx" />
     <Content Include="App\Components\Visit\EditVisit.aspx" />
@@ -145,6 +146,13 @@
     </Compile>
     <Compile Include="App\Components\Patient\EditPatient.aspx.designer.cs">
       <DependentUpon>EditPatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Components\AddPrescription.aspx.cs">
+      <DependentUpon>AddPrescription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Components\AddPrescription.aspx.designer.cs">
+      <DependentUpon>AddPrescription.aspx</DependentUpon>
     </Compile>
     <Compile Include="App\Components\Visit\AddVisit.aspx.cs">
       <DependentUpon>AddVisit.aspx</DependentUpon>
