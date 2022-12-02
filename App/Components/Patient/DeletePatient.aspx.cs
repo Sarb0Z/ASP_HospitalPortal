@@ -31,6 +31,7 @@ namespace ASP_HospitalPortal.App.Components.Patient
                 string userQuery = @"exec dbo.DELETE_PATIENT @id";
                 SqlCommand addUserCommand = new SqlCommand(userQuery, connectionString);
                 addUserCommand.Parameters.AddWithValue("@id", idbox.Text.Trim());
+                
                 addUserCommand.ExecuteNonQuery();
                 Response.Write("<script>alert('DELETE Works');</script>");
             }

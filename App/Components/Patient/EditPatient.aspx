@@ -9,7 +9,7 @@
                 <br /><br />
                 DOB : <asp:TextBox CssClass="textboxes" ID="TextBox1" Placeholder ="DOB" runat="server"></asp:TextBox>
                 <br /><br />
-                <asp:Button ID="addDoc" text="EDIT PATIENT" runat="server"  />
+                <asp:Button ID="addDoc" text="EDIT PATIENT" runat="server" OnClick="btnUpdatePatient_Click" />
                 <br /><br />  
                 Click To  <a href="GenericWriteOperations.aspx" > EDIT </a>
 </asp:Content>
