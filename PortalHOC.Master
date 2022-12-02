@@ -46,13 +46,22 @@
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Dashboard</a>
+          <a class="nav-link" href="ViewPatients.aspx">View Patients</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Team</a>
+          <a class="nav-link" href="ViewDoctors.aspx">View Doctors</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="ViewVisits.aspx">View Visits</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="ViewPerscriptions.aspx">View Perscriptions</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="ViewTests.aspx">View Tests</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="ViewMedicines.aspx">View Medicines</a>
         </li>
       </ul>
       <!-- Left links -->
