@@ -33,7 +33,6 @@ namespace ASP_HospitalPortal.App.Pages.Splash
                 SqlCommand addUserCommand = new SqlCommand(userQuery, connectionString);
                 addUserCommand.Parameters.AddWithValue("@username", NameBox.Text.Trim());
                 addUserCommand.Parameters.AddWithValue("email_id", MailBox.Text.Trim());
-                //addUserCommand.Parameters.AddWithValue("@date_created", "GETDATE()");
                 addUserCommand.Parameters.AddWithValue("@cnic", CNICBox.Text.Trim());
 
                 addUserCommand.ExecuteNonQuery();
@@ -45,7 +44,7 @@ namespace ASP_HospitalPortal.App.Pages.Splash
                 //string decrypted_password = encryptor.DecryptPassword(ecrypted_password);
 
                 string loginQuery = @"Insert into dbo._login (id, email_id, _password, password_Encrypted, date_modified)
-                values (@id , @email_id,CONVERT(varbinary, @password), null, GETDATE())";
+                values (@id , @email_id,CONVERT(varbinary, @password), null, @dob)";
                 string referenceQuery = @"Select * from dbo._user where cnic = @cnic";
                 SqlCommand getUserCommand = new SqlCommand(referenceQuery, connectionString);
                 getUserCommand.Parameters.AddWithValue("@cnic", CNICBox.Text.Trim());

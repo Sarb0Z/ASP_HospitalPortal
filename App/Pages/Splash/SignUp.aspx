@@ -14,6 +14,7 @@
         <br /><br />
         CNIC: <asp:TextBox ID="CNICBox" CssClass="textboxes" runat="server"></asp:TextBox>
         <br /><br />
+        DOB: <asp:TextBox ID="DOB" CssClass="textboxes" runat="server"></asp:TextBox>
 
         <asp:Button ID="signupbutton" Text="Create Account" runat="server" OnClick="signupbutton_Click" />
         <br /><br />

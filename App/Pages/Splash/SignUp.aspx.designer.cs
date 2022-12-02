@@ -60,6 +60,15 @@ namespace ASP_HospitalPortal.App.Pages.Splash
         protected global::System.Web.UI.WebControls.TextBox CNICBox;
 
         /// <summary>
+        /// DOB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox DOB;
+
+        /// <summary>
         /// signupbutton control.
         /// </summary>
         /// <remarks>
