@@ -8,7 +8,7 @@
                 <br /><br />
                 DOB : <asp:TextBox CssClass="textboxes" ID="TextBox1" Placeholder ="DOB" runat="server"></asp:TextBox>
                 <br /><br />
-                <asp:Button ID="addDoc" text="ADD PATIENT" runat="server"  />
+                <asp:Button ID="addDoc" text="ADD PATIENT" runat="server"  OnClick="btnAddPatient_Click" />
                 <br /><br />  
                 Click To  <a href="GenericWriteOperations.aspx" > ADD </a>
             </p>

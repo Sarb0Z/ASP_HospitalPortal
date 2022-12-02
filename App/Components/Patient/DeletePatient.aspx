@@ -5,7 +5,7 @@
      <p>
                 Enter Patient ID : <asp:TextBox CssClass="textboxes" ID="idbox" Placeholder="Enter ID" runat="server"></asp:TextBox><br /><br />
                 
-                <asp:Button ID="delDoc" text="DELETE PATIENT" runat="server"  />
+                <asp:Button ID="delDoc" text="DELETE PATIENT" runat="server" OnClick="DeletePatientButton_Click"  />
                 <br /><br />  
                 Click To  <a href="GenericWriteOperations.aspx" > DELETE </a>
      </p>

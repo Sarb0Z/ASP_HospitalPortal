@@ -10,7 +10,7 @@
                 <br /><br />
          Patient_ID : <asp:TextBox CssClass="textboxes" ID="TextBox2" Placeholder ="DOB" runat="server"></asp:TextBox>
          <br /><br />
-                <asp:Button ID="addDoc" text="ADD VIST" runat="server"  />
+                <asp:Button ID="addDoc" text="ADD VIST" runat="server" OnClick="btnAddVisit_Click"  />
                 <br /><br />  
                 Click To  <a href="GenericWriteOperations.aspx" > ADD </a>
             </p>
