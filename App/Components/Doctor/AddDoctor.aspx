@@ -2,4 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <p>
+                Doctor Name : <asp:TextBox CssClass="textboxes" ID="namebox" Placeholder="Name" runat="server"></asp:TextBox><br /><br />
+                Title : <asp:TextBox CssClass="textboxes" ID="titlebox" Placeholder ="Title" runat="server"></asp:TextBox>
+                <br />
+                <asp:Button ID="addDoc" text="ADD DOCTOR" runat="server"  />
+                <br /><br />  
+                Click To  <a href="GenericWriteOperations.aspx" > ADD </a>
+            </p>
 </asp:Content>
