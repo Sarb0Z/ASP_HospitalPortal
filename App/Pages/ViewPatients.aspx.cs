@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,8 +10,11 @@ namespace ASP_HospitalPortal.App.Pages
 {
     public partial class ViewPatients : System.Web.UI.Page
     {
+        string dbCon = ConfigurationManager.ConnectionStrings["MyDB"].ConnectionString;
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            GridView2.DataBind();
 
         }
     }

@@ -84,6 +84,7 @@
     <Content Include="App\Pages\Splash\SignUp.aspx" />
     <Content Include="App\Pages\ViewDoctors.aspx" />
     <Content Include="App\Pages\ViewPatients.aspx" />
+    <Content Include="App\Pages\ViewPrescriptionshtml.aspx" />
     <Content Include="App\Pages\ViewVisits.aspx" />
     <Content Include="Styling\CSS\bootstrap.min.css" />
     <Content Include="Styling\CSS\jquery.dataTables.min.css" />
@@ -212,6 +213,13 @@
     </Compile>
     <Compile Include="App\Pages\ViewPatients.aspx.designer.cs">
       <DependentUpon>ViewPatients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Pages\ViewPrescriptionshtml.aspx.cs">
+      <DependentUpon>ViewPrescriptionshtml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Pages\ViewPrescriptionshtml.aspx.designer.cs">
+      <DependentUpon>ViewPrescriptionshtml.aspx</DependentUpon>
     </Compile>
     <Compile Include="App\Pages\ViewVisits.aspx.cs">
       <DependentUpon>ViewVisits.aspx</DependentUpon>
