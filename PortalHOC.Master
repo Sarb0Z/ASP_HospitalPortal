@@ -7,6 +7,7 @@
     <title></title>
     <link href="Styling/CSS/bootstrap.min.css" rel="stylesheet"/>
     <link href="Styling/CSS/jquery.dataTables.min.css" rel="stylesheet"/>
+    <script src="Styling/JS/jquery-3.6.1.js"></script>
     <script src="Styling/JS/jquery.dataTables.min.js"></script>
     <script src="Styling/JS/popper.min.js"></script>
     <script src="Styling/JS/bootstrap.min.js"></script>
@@ -69,15 +70,17 @@
     <!-- Collapsible wrapper -->
 
     <!-- Right elements -->
-    <div class="d-flex align-items-center">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="Login.aspx">Logout</a>
+        </li>
       <!-- Icon -->
-      <a class="text-reset me-3" href="#">
-        <i class="fas fa-shopping-cart"></i>
-      </a>
+      
 
       <!-- Notifications -->
       
     <!-- Right elements -->
+
   </div>
   <!-- Container wrapper -->
 </nav>

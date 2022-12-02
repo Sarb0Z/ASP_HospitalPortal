@@ -43,9 +43,14 @@ namespace ASP_HospitalPortal.App.Pages.Splash
 
                 if (loginData != null && loginData.Rows.Count > 0)
                 {
-                    Response.Write("<script>alert('Logged in successfully!');</script>");
+                    Response.Redirect("../GenericWriteOperations.aspx");
                 }
-                
+                else
+                {
+                    Response.Write("<script>alert('Invalid Login');</script>");
+
+                }
+
 
 
                 connectionString.Close();
