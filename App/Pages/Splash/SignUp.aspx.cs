@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -26,21 +28,51 @@ namespace ASP_HospitalPortal.App.Pages.Splash
                 {
                     connectionString.Open();
                 }
-                string sqlFormattedDate = objUser.date_created.ToString("yyyy-MM-dd HH:mm:ss.fff");
 
-                string query = @"Insert into dbo._user values
+                string userQuery = @"Insert into dbo._user values
                 ('@username',' @email_id','@dob','@cnic')";
-                SqlCommand addUserCommand= new SqlCommand(query, connectionString);
-                addUserCommand.Parameters.AddWithValue("@username", NameBox);
-                addUserCommand.Parameters.AddWithValue("email_id", MailBox);
-                addUserCommand.Parameters.AddWithValue("@dob", PassBox);
-                addUserCommand.Parameters.AddWithValue("@cnic", CNICBox);
-            }
-            catch(Exception ex) 
-            {
+                SqlCommand addUserCommand = new SqlCommand(userQuery, connectionString);
+                addUserCommand.Parameters.AddWithValue("@username", NameBox.Text.Trim());
+                addUserCommand.Parameters.AddWithValue("email_id", MailBox.Text.Trim());
+                addUserCommand.Parameters.AddWithValue("@dob", DOB.ToString().Trim());
+                addUserCommand.Parameters.AddWithValue("@cnic", CNICBox.Text.Trim());
+
+                addUserCommand.ExecuteNonQuery();
+
+
+                connectionString.Close();
+                //Encryption encryptor = new Encryption(_protector);
+                //string encrypted_password = encryptor.EncryptPassword(objLogin.password);
+
+                //string decrypted_password = encryptor.DecryptPassword(ecrypted_password);
+
+                //string loginQuery = @"Insert into dbo._login values
+                //(@id ,' @email_id',CONVERT(varbinary,' @password'), null, GETDATE())";
+                //string referenceQuery = @"Select * from dbo._user where id = " + objLogin.id;
+
+                //DataTable userData = con.GetTableData(referenceQuery);
+                //if (userData != null && userData.Rows.Count > 0)
+                //{
+                //    if (userData.Rows[0]["email_id"].ToString() == objLogin.email_id)
+                //    {
+                //        newCon.GetJsonData(query);
+                //        return new JsonResult("Added Successfully");
+
+                //    }
+                //    else
+                //    {
+                //        return new JsonResult("Email ID incorrect.");
+                //    }
+                //}
+                Response.Write("<script>alert('Sign Up Works');</script>");
+
 
             }
-            Response.Write("<script>alert('Sign Up Works');</script>");
+            catch (Exception ex) 
+            {
+                Response.Write("<script>alert('"+ex.Message+"');</script>");
+
+            }
 
         }
     }

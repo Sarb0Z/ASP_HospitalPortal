@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<form id="form2" runat="server">
+    <form id="form2" runat="server">
         <div id="loginBox" >
             <img src="images/l.png" style="margin-top:50px; width:60%;" />
         <p>
@@ -12,7 +12,8 @@
         <br /><br />
         Password: <asp:TextBox CssClass="textboxes" ID="PassBox" TextMode="Password" runat="server"></asp:TextBox>
         <br /><br />
-
+        Date of Birth: <asp:Calendar ID="DOB" runat="server"></asp:Calendar>
+        <br /><br />
         CNIC: <asp:TextBox ID="CNICBox" CssClass="textboxes" runat="server"></asp:TextBox>
         <br /><br />
 

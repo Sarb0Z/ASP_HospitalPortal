@@ -67,10 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\Components\Doctor\DeleteDoctor.aspx" />
+    <Content Include="App\Components\Doctor\EditDoctor.aspx" />
+    <Content Include="App\Components\Doctor\AddDoctor.aspx" />
     <Content Include="App\Components\Doctor\AddEditDoctor.aspx" />
-    <Content Include="App\Components\Patient\AddEditPatient.aspx" />
+    <Content Include="App\Components\Patient\EditPatient.aspx" />
+    <Content Include="App\Components\Patient\AddPatient.aspx" />
+    <Content Include="App\Components\Patient\AddEditDoctor.aspx" />
+    <Content Include="App\Components\Patient\DeletePatient.aspx" />
+    <Content Include="App\Components\Visits\AddVisit.aspx" />
+    <Content Include="App\Components\Visits\DeleteVisit.aspx" />
+    <Content Include="App\Components\Visits\EditVisit.aspx" />
     <Content Include="App\Generics\ModalComponent.aspx" />
     <Content Include="App\Pages\GenericWriteOperations.aspx" />
+    <Content Include="App\Pages\Splash\AddDoctor.aspx" />
     <Content Include="App\Pages\Splash\Login.aspx" />
     <Content Include="App\Pages\Splash\SignUp.aspx" />
     <Content Include="App\Pages\ViewDoctors.aspx" />
@@ -85,6 +95,27 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App\Components\Doctor\DeleteDoctor.aspx.cs">
+      <DependentUpon>DeleteDoctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Components\Doctor\DeleteDoctor.aspx.designer.cs">
+      <DependentUpon>DeleteDoctor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Components\Doctor\EditDoctor.aspx.cs">
+      <DependentUpon>EditDoctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Components\Doctor\EditDoctor.aspx.designer.cs">
+      <DependentUpon>EditDoctor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Components\Doctor\AddDoctor.aspx.cs">
+      <DependentUpon>AddDoctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Components\Doctor\AddDoctor.aspx.designer.cs">
+      <DependentUpon>AddDoctor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App\Components\Doctor\AddEditDoctor.aspx.cs">
       <DependentUpon>AddEditDoctor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -92,12 +123,54 @@
     <Compile Include="App\Components\Doctor\AddEditDoctor.aspx.designer.cs">
       <DependentUpon>AddEditDoctor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App\Components\Patient\AddEditPatient.aspx.cs">
-      <DependentUpon>AddEditPatient.aspx</DependentUpon>
+    <Compile Include="App\Components\Patient\EditPatient.aspx.cs">
+      <DependentUpon>EditPatient.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="App\Components\Patient\AddEditPatient.aspx.designer.cs">
-      <DependentUpon>AddEditPatient.aspx</DependentUpon>
+    <Compile Include="App\Components\Patient\EditPatient.aspx.designer.cs">
+      <DependentUpon>EditPatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Components\Patient\AddPatient.aspx.cs">
+      <DependentUpon>AddPatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Components\Patient\AddPatient.aspx.designer.cs">
+      <DependentUpon>AddPatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Components\Patient\AddEditDoctor.aspx.cs">
+      <DependentUpon>AddEditDoctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Components\Patient\AddEditDoctor.aspx.designer.cs">
+      <DependentUpon>AddEditDoctor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Components\Patient\DeletePatient.aspx.cs">
+      <DependentUpon>DeletePatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Components\Patient\DeletePatient.aspx.designer.cs">
+      <DependentUpon>DeletePatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Components\Visits\AddVisit.aspx.cs">
+      <DependentUpon>AddVisit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Components\Visits\AddVisit.aspx.designer.cs">
+      <DependentUpon>AddVisit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Components\Visits\DeleteVisit.aspx.cs">
+      <DependentUpon>DeleteVisit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Components\Visits\DeleteVisit.aspx.designer.cs">
+      <DependentUpon>DeleteVisit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Components\Visits\EditVisit.aspx.cs">
+      <DependentUpon>EditVisit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Components\Visits\EditVisit.aspx.designer.cs">
+      <DependentUpon>EditVisit.aspx</DependentUpon>
     </Compile>
     <Compile Include="App\Generics\ModalComponent.aspx.cs">
       <DependentUpon>ModalComponent.aspx</DependentUpon>
@@ -112,6 +185,13 @@
     </Compile>
     <Compile Include="App\Pages\GenericWriteOperations.aspx.designer.cs">
       <DependentUpon>GenericWriteOperations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Pages\Splash\AddDoctor.aspx.cs">
+      <DependentUpon>AddDoctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Pages\Splash\AddDoctor.aspx.designer.cs">
+      <DependentUpon>AddDoctor.aspx</DependentUpon>
     </Compile>
     <Compile Include="App\Pages\Splash\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
