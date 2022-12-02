@@ -29,11 +29,11 @@
                       <div class="col">
                          <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1">
                              <Columns>
-                              <asp:BoundField DataField="id" HeaderText="id"  ReadOnly="True" SortExpression="id" />
-                              <asp:BoundField DataField="patient_name" HeaderText="patient_name" SortExpression="patient_name"    />
-                              <asp:BoundField DataField="doctor_name" HeaderText="doctor_name" SortExpression="doctor_name"></asp:BoundField>
-                              <asp:BoundField DataField="timing" HeaderText="timing"  SortExpression="timing" />
-                              <asp:BoundField DataField="purpose" HeaderText="purpose"  SortExpression="purpose" />
+                              <asp:BoundField DataField="id" HeaderText="ID"  ReadOnly="True" SortExpression="id" />
+                              <asp:BoundField DataField="patient_name" HeaderText="Patient" SortExpression="patient_name"    />
+                              <asp:BoundField DataField="doctor_name" HeaderText="Doctor" SortExpression="doctor_name"></asp:BoundField>
+                              <asp:BoundField DataField="timing" HeaderText="Date of Visit"  SortExpression="timing" />
+                              <asp:BoundField DataField="purpose" HeaderText="Purpose of Visit"  SortExpression="purpose" />
                               </Columns>
                         </asp:GridView>
                      </div>

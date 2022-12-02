@@ -29,14 +29,14 @@
                       <div class="col">
                           <asp:GridView class="table table-striped table-bordered" ID="GridView4" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource4">
                              <Columns>
-                              <asp:BoundField DataField="id"  HeaderText="id"  ReadOnly="True"  SortExpression="id" />
-                              <asp:BoundField DataField="cnic" HeaderText="cnic" SortExpression="cnic"></asp:BoundField>
-                              <asp:BoundField DataField="doctor_name"  HeaderText="doctor_name" SortExpression="doctor_name"/>
-                              <asp:BoundField DataField="medicine_name" HeaderText="medicine_name" SortExpression="medicine_name"></asp:BoundField>
-                              <asp:BoundField DataField="supplier_name" HeaderText="supplier_name" SortExpression="supplier_name"></asp:BoundField>
-                              <asp:BoundField DataField="recommendation" HeaderText="recommendation" SortExpression="recommendation"></asp:BoundField>
-                              <asp:BoundField DataField="intake_amount" HeaderText="intake_amount" SortExpression="intake_amount"></asp:BoundField>
- 
+                              <asp:BoundField DataField="id"  HeaderText="ID"  ReadOnly="True"  SortExpression="id" />
+                              <asp:BoundField DataField="cnic" HeaderText="CNIC" SortExpression="cnic"></asp:BoundField>
+                              <asp:BoundField DataField="medicine_name" HeaderText="Medicine" SortExpression="medicine_name"></asp:BoundField>
+                              <asp:BoundField DataField="supplier_name" HeaderText="Supplier" SortExpression="supplier_name"></asp:BoundField>
+                              <asp:BoundField DataField="recommendation" HeaderText="Recommendation" SortExpression="recommendation"></asp:BoundField>
+                              <asp:BoundField DataField="intake_amount" HeaderText="Intake Amount" SortExpression="intake_amount"></asp:BoundField>
+                              <asp:BoundField DataField="doctor_name"  HeaderText="Doctor" SortExpression="doctor_name"/>
+
                              </Columns>
                         </asp:GridView>
                      </div>

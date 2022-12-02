@@ -25,13 +25,14 @@
                      </div>
                   </div>
                   <div class="row">
-                      <asp:SqlDataSource ID="SqlDataSource6" runat="server" ></asp:SqlDataSource>
+                      <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:TestTableConnectionString %>" SelectCommand="SELECT * FROM [tests]"></asp:SqlDataSource>
                       <div class="col">
                           <asp:GridView class="table table-striped table-bordered" ID="GridView6" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource6">
                              <Columns>
-                              <asp:BoundField DataField="id" HeaderText="id"  ReadOnly="True" InsertVisible="False" SortExpression="id" />
-                              <asp:BoundField DataField="doctor_name" HeaderText="doctor_name" SortExpression="doctor_name"       />
-                              <asp:BoundField DataField="title" HeaderText="title" SortExpression="title"     ></asp:BoundField>
+                              <asp:BoundField DataField="id" HeaderText="ID"  ReadOnly="True" InsertVisible="False" SortExpression="id" />
+                              <asp:BoundField DataField="test_name" HeaderText="Name" SortExpression="test_name"          />
+                              <asp:BoundField DataField="test_description" HeaderText="Description" SortExpression="test_description"></asp:BoundField>
+                                 <asp:BoundField DataField="price" HeaderText="Price" SortExpression="price"        ></asp:BoundField>
                               </Columns>
                         </asp:GridView>
                      </div>

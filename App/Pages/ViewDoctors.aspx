@@ -29,9 +29,9 @@
                       <div class="col">
                           <asp:GridView class="table table-striped table-bordered" ID="GridView3" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource3">
                              <Columns>
-                              <asp:BoundField DataField="id" HeaderText="id"  ReadOnly="True" InsertVisible="False" SortExpression="id" />
-                              <asp:BoundField DataField="doctor_name" HeaderText="doctor_name" SortExpression="doctor_name"       />
-                              <asp:BoundField DataField="title" HeaderText="title" SortExpression="title"     ></asp:BoundField>
+                              <asp:BoundField DataField="id" HeaderText="ID"  ReadOnly="True" InsertVisible="False" SortExpression="id" />
+                              <asp:BoundField DataField="doctor_name" HeaderText="Name" SortExpression="doctor_name"       />
+                              <asp:BoundField DataField="title" HeaderText="Title" SortExpression="title"     ></asp:BoundField>
                               </Columns>
                         </asp:GridView>
                      </div>
