@@ -79,9 +79,11 @@
     <Content Include="App\Components\Visit\EditVisit.aspx" />
     <Content Include="App\Generics\ModalComponent.aspx" />
     <Content Include="App\Pages\GenericWriteOperations.aspx" />
+    <Content Include="App\Pages\Medicines.aspx" />
     <Content Include="App\Pages\Splash\AddDoctor.aspx" />
     <Content Include="App\Pages\Splash\Login.aspx" />
     <Content Include="App\Pages\Splash\SignUp.aspx" />
+    <Content Include="App\Pages\Tests.aspx" />
     <Content Include="App\Pages\ViewDoctors.aspx" />
     <Content Include="App\Pages\ViewPatients.aspx" />
     <Content Include="App\Pages\ViewPrescriptionshtml.aspx" />
@@ -179,6 +181,13 @@
     <Compile Include="App\Pages\GenericWriteOperations.aspx.designer.cs">
       <DependentUpon>GenericWriteOperations.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App\Pages\Medicines.aspx.cs">
+      <DependentUpon>Medicines.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Pages\Medicines.aspx.designer.cs">
+      <DependentUpon>Medicines.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App\Pages\Splash\AddDoctor.aspx.cs">
       <DependentUpon>AddDoctor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -199,6 +208,13 @@
     </Compile>
     <Compile Include="App\Pages\Splash\SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Pages\Tests.aspx.cs">
+      <DependentUpon>Tests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Pages\Tests.aspx.designer.cs">
+      <DependentUpon>Tests.aspx</DependentUpon>
     </Compile>
     <Compile Include="App\Pages\ViewDoctors.aspx.cs">
       <DependentUpon>ViewDoctors.aspx</DependentUpon>
