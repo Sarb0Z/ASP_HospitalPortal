@@ -56,6 +56,18 @@
      
             </asp:TableCell>
         </asp:TableRow>
+          <asp:TableRow>
+            <asp:TableCell>
+                <asp:Label ID="Label4" runat="server" Text="PERSCRIPTIONS"></asp:Label>
+            </asp:TableCell>
+            <asp:TableCell>
+                <asp:LinkButton ID="LinkButton10" runat="server" Text="Add" CommandName="Edit" CommandArgument='<%# Eval("ID") %>'>                    
+                  
+                </asp:LinkButton>
+                        
+                    
+            </asp:TableCell>
+        </asp:TableRow>
          
     </asp:Table>
 </asp:Content>
