@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 
 namespace ASP_HospitalPortal.App.Components.Patient
 {
@@ -28,7 +31,7 @@ namespace ASP_HospitalPortal.App.Components.Patient
                 string userQuery = @"exec dbo.DELETE_PATIENT @id";
                 SqlCommand addUserCommand = new SqlCommand(userQuery, connectionString);
                 addUserCommand.Parameters.AddWithValue("@id", idbox.Text.Trim());
-
+                addUserCommand.ExecuteNonQuery();
                 Response.Write("<script>alert('DELETE Works');</script>");
             }
             catch (Exception ex)
