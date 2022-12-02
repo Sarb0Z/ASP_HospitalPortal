@@ -28,13 +28,12 @@ namespace ASP_HospitalPortal.App.Pages.Splash
                 {
                     connectionString.Open();
                 }
-
-                string userQuery = @"Insert into dbo._user values
-                ('@username',' @email_id','@dob','@cnic')";
+                //DateTime dt = DOB.SelectedDate;
+                string userQuery = @"Insert into dbo._user (username, email_id, date_created, cnic) values (@username,@email_id, GETDATE(), @cnic)";
                 SqlCommand addUserCommand = new SqlCommand(userQuery, connectionString);
                 addUserCommand.Parameters.AddWithValue("@username", NameBox.Text.Trim());
                 addUserCommand.Parameters.AddWithValue("email_id", MailBox.Text.Trim());
-                addUserCommand.Parameters.AddWithValue("@dob", DOB.ToString().Trim());
+                //addUserCommand.Parameters.AddWithValue("@date_created", "GETDATE()");
                 addUserCommand.Parameters.AddWithValue("@cnic", CNICBox.Text.Trim());
 
                 addUserCommand.ExecuteNonQuery();
@@ -48,7 +47,9 @@ namespace ASP_HospitalPortal.App.Pages.Splash
 
                 //string loginQuery = @"Insert into dbo._login values
                 //(@id ,' @email_id',CONVERT(varbinary,' @password'), null, GETDATE())";
-                //string referenceQuery = @"Select * from dbo._user where id = " + objLogin.id;
+                //string referenceQuery = @"Select * from dbo._user where cnic = " + CNICBox.Text.Trim();
+
+                //SqlDataAdapter da=new SqlDataAdapter(loginQuery, referenceQuery);
 
                 //DataTable userData = con.GetTableData(referenceQuery);
                 //if (userData != null && userData.Rows.Count > 0)
@@ -63,7 +64,7 @@ namespace ASP_HospitalPortal.App.Pages.Splash
                 //    {
                 //        return new JsonResult("Email ID incorrect.");
                 //    }
-                //}
+                }
                 Response.Write("<script>alert('Sign Up Works');</script>");
 
 

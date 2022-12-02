@@ -12,12 +12,10 @@
         <br /><br />
         Password: <asp:TextBox CssClass="textboxes" ID="PassBox" TextMode="Password" runat="server"></asp:TextBox>
         <br /><br />
-        Date of Birth: <asp:Calendar ID="DOB" runat="server"></asp:Calendar>
-        <br /><br />
         CNIC: <asp:TextBox ID="CNICBox" CssClass="textboxes" runat="server"></asp:TextBox>
         <br /><br />
 
-        <asp:Button ID="signupbutton" Text="Create Account" runat="server" OnClick="signupbutton_Click"  />
+        <asp:Button ID="signupbutton" Text="Create Account" runat="server" OnClick="signupbutton_Click" />
         <br /><br />
             Click To  <a href="Login.aspx" >Log In</a> if you Already Have an Account.
             </p>
