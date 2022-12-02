@@ -39,32 +39,38 @@ namespace ASP_HospitalPortal.App.Pages.Splash
                 addUserCommand.ExecuteNonQuery();
 
 
-                connectionString.Close();
                 //Encryption encryptor = new Encryption(_protector);
                 //string encrypted_password = encryptor.EncryptPassword(objLogin.password);
 
                 //string decrypted_password = encryptor.DecryptPassword(ecrypted_password);
 
-                //string loginQuery = @"Insert into dbo._login values
-                //(@id ,' @email_id',CONVERT(varbinary,' @password'), null, GETDATE())";
-                //string referenceQuery = @"Select * from dbo._user where cnic = " + CNICBox.Text.Trim();
+                string loginQuery = @"Insert into dbo._login (id, email_id, _password, password_Encrypted, date_modified)
+                values (@id , @email_id,CONVERT(varbinary, @password), null, GETDATE())";
+                string referenceQuery = @"Select * from dbo._user where cnic = @cnic";
+                SqlCommand getUserCommand = new SqlCommand(referenceQuery, connectionString);
+                getUserCommand.Parameters.AddWithValue("@cnic", CNICBox.Text.Trim());
+                SqlDataAdapter da =new SqlDataAdapter(getUserCommand);
 
-                //SqlDataAdapter da=new SqlDataAdapter(loginQuery, referenceQuery);
+                DataTable userData = new DataTable();
+                da.Fill(userData);
 
-                //DataTable userData = con.GetTableData(referenceQuery);
-                //if (userData != null && userData.Rows.Count > 0)
-                //{
-                //    if (userData.Rows[0]["email_id"].ToString() == objLogin.email_id)
-                //    {
-                //        newCon.GetJsonData(query);
-                //        return new JsonResult("Added Successfully");
+                if (userData != null && userData.Rows.Count > 0)
+                {
+                    if (userData.Rows[0]["email_id"].ToString() == MailBox.Text.Trim())
+                    {
+                        SqlCommand addPasswordCommand = new SqlCommand(loginQuery, connectionString);
+                        addPasswordCommand.Parameters.AddWithValue("@id", userData.Rows[0]["id"].ToString());
+                        addPasswordCommand.Parameters.AddWithValue("@email_id", userData.Rows[0]["email_id"].ToString());
+                        addPasswordCommand.Parameters.AddWithValue("@password", PassBox.Text.Trim());
+                        
+                        
+                        addPasswordCommand.ExecuteNonQuery();
 
-                //    }
-                //    else
-                //    {
-                //        return new JsonResult("Email ID incorrect.");
-                //    }
+
+                    }
                 }
+                connectionString.Close();
+
                 Response.Write("<script>alert('Sign Up Works');</script>");
 
 

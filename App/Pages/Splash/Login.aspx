@@ -9,7 +9,7 @@
                 Login ID : <asp:TextBox CssClass="textboxes" ID="mailbox" Placeholder="Mail" runat="server"></asp:TextBox><br /><br />
                 Password : <asp:TextBox CssClass="textboxes" ID="passwordbox" Placeholder ="Password" TextMode="Password" runat="server"></asp:TextBox>
                 <br />
-                <asp:Button ID="loginbutton" text="Log In" runat="server"  />
+                <asp:Button ID="loginbutton" text="Log In" runat="server" OnClick="loginbutton_Click"  />
                 <br /><br />  
                 Click To  <a href="SignUp.aspx" >Sign Up</a>
             </p>
