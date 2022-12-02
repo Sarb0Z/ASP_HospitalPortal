@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ASP_HospitalPortal.App
+namespace ASP_HospitalPortal.App.Pages.Splash
 {
-    public partial class Patient : System.Web.UI.Page
+    public partial class Loginaspx : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
