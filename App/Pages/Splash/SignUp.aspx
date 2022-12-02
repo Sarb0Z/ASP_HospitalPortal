@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<form id="form2" runat="server">
+    <form id="form2" runat="server">
         <div id="loginBox" >
             <img src="images/l.png" style="margin-top:50px; width:60%;" />
         <p>
