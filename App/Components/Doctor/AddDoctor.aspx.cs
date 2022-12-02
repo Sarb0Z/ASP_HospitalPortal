@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,11 +11,16 @@ namespace ASP_HospitalPortal.App.Components.Doctor
 {
     public partial class AddDoctor1 : System.Web.UI.Page
     {
+        string dbCon = ConfigurationManager.ConnectionStrings["MyDB"].ConnectionString;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-        protected void btnAdd_Click(object sender, EventArgs e)
+        
+        
+
+        protected void addDoc_Click(object sender, EventArgs e)
         {
             string dbCon = ConfigurationManager.ConnectionStrings["MyDB"].ConnectionString;
             try
@@ -27,8 +34,8 @@ namespace ASP_HospitalPortal.App.Components.Doctor
                 string userQuery = @"exec dbo.POST_TO_DOCTOR @doctor_name, @title";
                 SqlCommand addUserCommand = new SqlCommand(userQuery, connectionString);
                 addUserCommand.Parameters.AddWithValue("@doctor_name", namebox.Text.Trim());
-                addUserCommand.Parameters.AddWithValue("@title", cnicbox.Text.Trim());
-                
+                addUserCommand.Parameters.AddWithValue("@title", titlebox.Text.Trim());
+
 
                 addUserCommand.ExecuteNonQuery();
                 Response.Write("<script>alert('ADD Works');</script>");

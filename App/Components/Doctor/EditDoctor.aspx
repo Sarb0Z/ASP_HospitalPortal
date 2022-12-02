@@ -24,7 +24,6 @@
                 <asp:Label ID="Label5" runat="server" Text=" Click to "></asp:Label>
                 <asp:Button ID="btnUpdate" runat="server" Text="Update" OnClick="btnUpdate_Click" />
                 </asp:Panel>
-</asp:Panel>
         </ContentTemplate>
     </asp:UpdatePanel>
                 

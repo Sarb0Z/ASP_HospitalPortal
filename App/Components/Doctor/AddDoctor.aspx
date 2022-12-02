@@ -6,7 +6,7 @@
                 Doctor Name : <asp:TextBox CssClass="textboxes" ID="namebox" Placeholder="Name" runat="server"></asp:TextBox><br /><br />
                 Title : <asp:TextBox CssClass="textboxes" ID="titlebox" Placeholder ="Title" runat="server"></asp:TextBox>
                 <br />
-                <asp:Button ID="addDoc" text="ADD DOCTOR" runat="server"  />
+                <asp:Button ID="addDoc" text="ADD DOCTOR" runat="server" OnClick="addDoc_Click"  />
                 <br /><br />  
                 Click To  <a href="GenericWriteOperations.aspx" > ADD </a>
             </p>
