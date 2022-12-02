@@ -87,7 +87,7 @@
     <Content Include="App\Pages\Tests.aspx" />
     <Content Include="App\Pages\ViewDoctors.aspx" />
     <Content Include="App\Pages\ViewPatients.aspx" />
-    <Content Include="App\Pages\ViewPrescriptionshtml.aspx" />
+    <Content Include="App\Pages\ViewPrescriptions.aspx" />
     <Content Include="App\Pages\ViewVisits.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Styling\CSS\bootstrap.min.css" />
@@ -240,12 +240,12 @@
     <Compile Include="App\Pages\ViewPatients.aspx.designer.cs">
       <DependentUpon>ViewPatients.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App\Pages\ViewPrescriptionshtml.aspx.cs">
-      <DependentUpon>ViewPrescriptionshtml.aspx</DependentUpon>
+    <Compile Include="App\Pages\ViewPrescriptions.aspx.cs">
+      <DependentUpon>ViewPrescriptions.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="App\Pages\ViewPrescriptionshtml.aspx.designer.cs">
-      <DependentUpon>ViewPrescriptionshtml.aspx</DependentUpon>
+    <Compile Include="App\Pages\ViewPrescriptions.aspx.designer.cs">
+      <DependentUpon>ViewPrescriptions.aspx</DependentUpon>
     </Compile>
     <Compile Include="App\Pages\ViewVisits.aspx.cs">
       <DependentUpon>ViewVisits.aspx</DependentUpon>

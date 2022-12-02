@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PortalHOC.Master" AutoEventWireup="true" CodeBehind="ViewPrescriptionshtml.aspx.cs" Inherits="ASP_HospitalPortal.App.Pages.ViewPrescriptionshtml" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PortalHOC.Master" AutoEventWireup="true" CodeBehind="ViewPrescriptions.aspx.cs" Inherits="ASP_HospitalPortal.App.Pages.ViewPrescriptionshtml" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
         $(document).ready(function () {
