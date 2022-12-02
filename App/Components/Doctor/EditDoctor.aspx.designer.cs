@@ -11,7 +11,7 @@ namespace ASP_HospitalPortal.App.Components.Doctor
 {
 
 
-    public partial class AddDoctor
+    public partial class EditDoctor
     {
     }
 }

@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ASP_HospitalPortal.App.Components.Doctor
+namespace ASP_HospitalPortal.App.Components.Patient
 {
 
 
-    public partial class AddDoctor
+    public partial class DeletePatient
     {
     }
 }

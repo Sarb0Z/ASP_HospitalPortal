@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ASP_HospitalPortal.App.Components.Doctor
+namespace ASP_HospitalPortal.App.Components.Patient
 {
-    public partial class AddDoctor : System.Web.UI.Page
+    public partial class EditPatient : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

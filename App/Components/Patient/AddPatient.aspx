@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PortalHOC.Master" AutoEventWireup="true" CodeBehind="AddDoctor.aspx.cs" Inherits="ASP_HospitalPortal.App.Components.Doctor.AddDoctor" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PortalHOC.Master" AutoEventWireup="true" CodeBehind="AddPatient.aspx.cs" Inherits="ASP_HospitalPortal.App.Components.Patient.AddPatient" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

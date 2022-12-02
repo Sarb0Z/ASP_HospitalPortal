@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace ASP_HospitalPortal.App.Components.Doctor
 {
-    public partial class AddDoctor : System.Web.UI.Page
+    public partial class DeleteDoctor : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
