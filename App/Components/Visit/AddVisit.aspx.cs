@@ -29,7 +29,7 @@ namespace ASP_HospitalPortal.App.Components.Visits
                 //DateTime dt = DOB.SelectedDate;
                 string userQuery = @"exec dbo.POST_TO_VISIT @timing, @purpose, @patient_id, @doctor_id";
                 SqlCommand addUserCommand = new SqlCommand(userQuery, connectionString);
-                addUserCommand.Parameters.AddWithValue("@time", "GETDATE()");
+                addUserCommand.Parameters.AddWithValue("@time", namebox.Text.Trim());
                 addUserCommand.Parameters.AddWithValue("@purpose", pbox.Text.Trim());
                 addUserCommand.Parameters.AddWithValue("@patient_id", TextBox2.Text.Trim());
                 addUserCommand.Parameters.AddWithValue("@doctor_id", TextBox1.Text.Trim());

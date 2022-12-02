@@ -2,9 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form id="form1" runat="server">
-    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-        <ContentTemplate>
+\
             <asp:Panel ID="Panel1" runat="server">
                 <asp:Label ID="Label1" runat="server" Text="Edit Doctor"></asp:Label>
                 <br />
@@ -26,9 +24,6 @@
                 <br />
                  Click To  <a href="GenericWriteOperations.aspx" > EDIT </a>
                 </asp:Panel>
-        </ContentTemplate>
-    </asp:UpdatePanel>
-                
-    </form>
-                
+
+                                
 </asp:Content>

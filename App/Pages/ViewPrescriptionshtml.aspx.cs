@@ -8,13 +8,13 @@ using System.Web.UI.WebControls;
 
 namespace ASP_HospitalPortal.App.Pages
 {
-    public partial class ViewDoctors : System.Web.UI.Page
+    public partial class ViewPrescriptionshtml : System.Web.UI.Page
     {
         string dbCon = ConfigurationManager.ConnectionStrings["MyDB"].ConnectionString;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            GridView3.DataBind();
+            GridView4.DataBind();
         }
     }
 }
