@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -26,13 +28,14 @@ namespace ASP_HospitalPortal.App.Components.Visits
                 {
                     connectionString.Open();
                 }
+                //string sqlFormattedDate = Timing.ToString("yyyy-MM-dd HH:mm:ss.fff");
                 string userQuery = @"exec dbo.UPDATE_VISIT @id, @timing, @purpose, @patient_id, @doctor_id";
                 SqlCommand addUserCommand = new SqlCommand(userQuery, connectionString);
-                addUserCommand.Parameters.AddWithValue("@id", txtDoctorID.Text.Trim());
-                addUserCommand.Parameters.AddWithValue("@timing", txtDoctorSpecialization.Text.Trim());
-                addUserCommand.Parameters.AddWithValue("@purpose", txtDoctorName.Text.Trim());
-                addUserCommand.Parameters.AddWithValue("@patient_id", txtDoctorSpecialization.Text.Trim());
-                addUserCommand.Parameters.AddWithValue("@doctor_id", txtDoctorSpecialization.Text.Trim());
+                addUserCommand.Parameters.AddWithValue("@id", IDBox.Text.Trim());
+                addUserCommand.Parameters.AddWithValue("@timing", Timing.Text.Trim());
+                addUserCommand.Parameters.AddWithValue("@purpose", PurposeBox.Text.Trim());
+                addUserCommand.Parameters.AddWithValue("@patient_id", PatientBox.Text.Trim());
+                addUserCommand.Parameters.AddWithValue("@doctor_id", DoctorBox.Text.Trim());
                 
 
                 addUserCommand.ExecuteNonQuery();
