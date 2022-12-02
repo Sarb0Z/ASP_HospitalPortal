@@ -16,7 +16,7 @@
         CNIC: <asp:TextBox ID="CNICBox" CssClass="textboxes" runat="server"></asp:TextBox>
         <br /><br />
 
-        <asp:Button ID="signupbutton" Text="Create Account" runat="server"  />
+        <asp:Button ID="signupbutton" Text="Create Account" runat="server" OnClick="signupbutton_Click"  />
         <br /><br />
             Click To  <a href="Login.aspx" >Log In</a> if you Already Have an Account.
             </p>

@@ -16,6 +16,7 @@ namespace ASP_HospitalPortal.App.Pages.Splash
 
         protected void signupbutton_Click(object sender, EventArgs e)
         {
+            Response.Write("<script>alert('Sign Up Works');</script>");
 
         }
     }
