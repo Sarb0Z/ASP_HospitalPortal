@@ -67,8 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\Components\Doctor\AddEditDoctor.aspx" />
     <Content Include="App\Components\Patient\AddEditPatient.aspx" />
     <Content Include="App\Generics\ModalComponent.aspx" />
+    <Content Include="App\Pages\GenericWriteOperations.aspx" />
     <Content Include="App\Pages\Splash\Login.aspx" />
     <Content Include="App\Pages\Splash\SignUp.aspx" />
     <Content Include="App\Pages\ViewDoctors.aspx" />
@@ -83,6 +85,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App\Components\Doctor\AddEditDoctor.aspx.cs">
+      <DependentUpon>AddEditDoctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Components\Doctor\AddEditDoctor.aspx.designer.cs">
+      <DependentUpon>AddEditDoctor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App\Components\Patient\AddEditPatient.aspx.cs">
       <DependentUpon>AddEditPatient.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -96,6 +105,13 @@
     </Compile>
     <Compile Include="App\Generics\ModalComponent.aspx.designer.cs">
       <DependentUpon>ModalComponent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Pages\GenericWriteOperations.aspx.cs">
+      <DependentUpon>GenericWriteOperations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\Pages\GenericWriteOperations.aspx.designer.cs">
+      <DependentUpon>GenericWriteOperations.aspx</DependentUpon>
     </Compile>
     <Compile Include="App\Pages\Splash\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
