@@ -29,10 +29,12 @@ namespace ASP_HospitalPortal.App.Pages.Splash
                 {
                     connectionString.Open();
                 }
-                string query = @"Select id, email_id, _password, date_modified from dbo._login where email_id = @email_id and _password = CONVERT(varbinary, @_password)";
+        
+
+                string query = @"Select * from dbo._login where email_id = @email_id and CONVERT(varchar, _password) = @password";
                 SqlCommand addLoginCommand = new SqlCommand(query, connectionString);
                 addLoginCommand.Parameters.AddWithValue("@email_id", mailbox.Text.Trim());
-                addLoginCommand.Parameters.AddWithValue("@_password", passwordbox.Text.Trim());
+                addLoginCommand.Parameters.AddWithValue("@password", passwordbox.Text.Trim());
 
                 SqlDataAdapter da = new SqlDataAdapter(addLoginCommand);
 
