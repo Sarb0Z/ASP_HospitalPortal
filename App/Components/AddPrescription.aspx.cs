@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -27,7 +29,7 @@ namespace ASP_HospitalPortal.App.Components
                     connectionString.Open();
                 }
                 //DateTime dt = DOB.SelectedDate;
-                string userQuery = @"exec dbo.POST_TO_PRESCRIPTION @patient_id, @medicine_id,@recommendation,@intake_amount,@doctor_id,@test_id";
+                string userQuery = @"exec dbo.POST_TO_PRESCRIPTION @patient_id, @medicine_id,@recommendation,@intake_amount,@doctor_id, @test_id";
                 SqlCommand addUserCommand = new SqlCommand(userQuery, connectionString);
                 addUserCommand.Parameters.AddWithValue("@patient_id", pidbox.Text.Trim());
                 addUserCommand.Parameters.AddWithValue("@medicine_id", cnicbox.Text.Trim());
